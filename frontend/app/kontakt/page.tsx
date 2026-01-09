@@ -1,3 +1,26 @@
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Kontakt",
+  description:
+    "Kontaktirajte STEP-SISTEM za profesionalna rešenja u oblasti industrijske automatizacije i PLC sistema. Firma iz Valjeva, Srbija. Projektovanje, programiranje i servis automatizovanih industrijskih sistema.",
+  keywords: [
+    "kontakt STEP-SISTEM",
+    "industrijska automatizacija Valjevo",
+    "PLC sistemi kontakt",
+    "kontakt za automatizaciju",
+  ],
+  openGraph: {
+    title: "Kontakt - STEP-SISTEM",
+    description:
+      "Kontaktirajte nas za profesionalna rešenja u oblasti industrijske automatizacije i PLC sistema.",
+    type: "website",
+  },
+  alternates: {
+    canonical: "/kontakt",
+  },
+};
+
 export default function Kontakt() {
   return (
     <div className="min-h-screen bg-white">

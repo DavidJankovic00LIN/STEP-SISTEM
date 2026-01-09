@@ -1,5 +1,31 @@
+import type { Metadata } from "next";
 import Slider from "./components/Slider";
 import References from "./components/References";
+
+export const metadata: Metadata = {
+  title: "Dobrodošli u STEP-SISTEM",
+  description:
+    "STEP-SISTEM je firma iz Valjeva specijalizovana za industrijsku automatiku i PLC rešenja. Bavimo se projektovanjem, programiranjem i puštanjem u rad automatizovanih industrijskih sistema. PLC programiranje, HMI i SCADA sistemi, elektro ormari i servis industrijskih sistema.",
+  keywords: [
+    "PLC sistemi Valjevo",
+    "industrijska automatizacija",
+    "PLC programiranje",
+    "HMI paneli",
+    "SCADA sistemi",
+    "elektro ormari",
+    "servis industrijskih sistema",
+    "projektovanje automatizovanih sistema",
+  ],
+  openGraph: {
+    title: "STEP-SISTEM - Profesionalna rešenja za industrijsku automatizaciju",
+    description:
+      "Firma iz Valjeva specijalizovana za industrijsku automatiku i PLC rešenja. Projektovanje, programiranje i puštanje u rad automatizovanih industrijskih sistema.",
+    type: "website",
+  },
+  alternates: {
+    canonical: "/",
+  },
+};
 
 export default function Home() {
   return (

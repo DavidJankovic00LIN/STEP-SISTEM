@@ -19,14 +19,6 @@ export default function Footer() {
                   href="/"
                   className="text-gray-300 transition-colors hover:text-white"
                 >
-                  Početna
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/"
-                  className="text-gray-300 transition-colors hover:text-white"
-                >
                   O nama
                 </Link>
               </li>

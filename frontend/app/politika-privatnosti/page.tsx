@@ -1,3 +1,18 @@
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Politika privatnosti",
+  description:
+    "Politika privatnosti STEP-SISTEM-a. Informacije o načinu prikupljanja, korišćenja i zaštite ličnih podataka posetilaca i klijenata. Uvažavamo vašu privatnost i poštujemo zakonske odredbe o zaštiti podataka.",
+  robots: {
+    index: false,
+    follow: true,
+  },
+  alternates: {
+    canonical: "/politika-privatnosti",
+  },
+};
+
 export default function PolitikaPrivatnosti() {
   return (
     <div className="min-h-screen bg-white">

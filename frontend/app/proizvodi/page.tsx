@@ -27,7 +27,7 @@ const proizvodi: Proizvod[] = [
     id: 2,
     name: "HMI paneli",
     image: elektroImg,
-    description: "Intuitivni interfejsi za operatere",
+    description: "Prikaži više",
     details:
       "Izrađujemo HMI interfejse koji omogućavaju jednostavno upravljanje mašinama i linijama. Interfejsi su pregledni, intuitivni i prilagođeni operaterima, sa jasnim prikazom stanja, alarma i parametara procesa.",
   },
@@ -155,9 +155,7 @@ export default function Proizvodi() {
               <div className="absolute inset-0 bg-black/40"></div>
               <div className="absolute bottom-0 left-0 right-0 bg-black/80 p-6 text-white">
                 <h2 className="text-3xl font-bold">{selectedProizvod.name}</h2>
-                <p className="mt-2 text-lg text-gray-200">
-                  {selectedProizvod.description}
-                </p>
+                
               </div>
             </div>
 

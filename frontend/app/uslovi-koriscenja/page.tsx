@@ -1,3 +1,18 @@
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Uslovi korišćenja",
+  description:
+    "Uslovi korišćenja sajta STEP-SISTEM. Pravila i odredbe koje regulišu korišćenje našeg sajta, prava intelektualne svojine i odgovornost korisnika.",
+  robots: {
+    index: false,
+    follow: true,
+  },
+  alternates: {
+    canonical: "/uslovi-koriscenja",
+  },
+};
+
 export default function UsloviKoriscenja() {
   return (
     <div className="min-h-screen bg-white">
