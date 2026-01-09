@@ -16,33 +16,39 @@ export default function Header() {
             priority
             className="object-contain"
           />
-          <p className="mt-2 text-sm" style={{ color: "#0066CC" }}>
+          <h4
+            className="mt-2 text-base"
+            style={{ color: "#003866", fontFamily: "var(--font-montserrat)" }}
+          >
             Industrial automation & PLC solutions
-          </p>
+          </h4>
         </Link>
       </div>
 
       {/* Razmak od 20px - bela pozadina */}
       <div className="h-5 bg-white"></div>
 
-      {/* Navigacioni baner - sivi, visina 40px */}
-      <nav className="flex h-10 items-center justify-center bg-gray-700">
-        <div className="flex gap-8">
+      {/* Navigacioni baner - sivi, visina 60px */}
+      <nav className="flex h-[60px] w-full items-center justify-center bg-gray-700 px-8">
+        <div className="flex w-full max-w-7xl items-center justify-center gap-12">
           <Link
-            href="/o-nama"
-            className="text-white transition-colors hover:text-gray-200"
+            href="/"
+            className="text-lg font-bold text-white transition-colors hover:text-gray-200"
+            style={{ fontFamily: "var(--font-montserrat)" }}
           >
             O nama
           </Link>
           <Link
             href="/proizvodi"
-            className="text-white transition-colors hover:text-gray-200"
+            className="text-lg font-bold text-white transition-colors hover:text-gray-200"
+            style={{ fontFamily: "var(--font-montserrat)" }}
           >
             Proizvodi
           </Link>
           <Link
             href="/kontakt"
-            className="text-white transition-colors hover:text-gray-200"
+            className="text-lg font-bold text-white transition-colors hover:text-gray-200"
+            style={{ fontFamily: "var(--font-montserrat)" }}
           >
             Kontakt
           </Link>

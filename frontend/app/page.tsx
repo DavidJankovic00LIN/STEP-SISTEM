@@ -1,4 +1,5 @@
 import Slider from "./components/Slider";
+import References from "./components/References";
 
 export default function Home() {
   return (
@@ -35,10 +36,11 @@ export default function Home() {
               STEP-SISTEM pristupa svakom projektu individualno, sa jasnom
               komunikacijom, tehničkom preciznošću i pouzdanim rešenjima koja
               smanjuju zastoje i povećavaju produktivnost.
-            </p>
+          </p>
           </div>
         </div>
       </main>
+      <References />
     </div>
   );
 }
