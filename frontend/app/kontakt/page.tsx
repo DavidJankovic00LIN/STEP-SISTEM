@@ -51,12 +51,11 @@ export default function Kontakt() {
         <div className="mx-auto grid max-w-7xl gap-12 lg:grid-cols-3">
           {/* Leva kolona - 1/3 - Kontakt informacije */}
           <div className="lg:col-span-1">
-            <div className="space-y-8">
-              <div>
-                <h2 className="mb-4 text-2xl font-semibold text-gray-900">
-                  Kontakt informacije
-                </h2>
-                <div className="space-y-6 text-gray-700">
+            <div className="rounded-lg bg-gray-50 p-8">
+              <h2 className="mb-6 text-2xl font-semibold text-gray-900">
+                Kontakt informacije
+              </h2>
+              <div className="space-y-6 text-gray-700">
                   <div>
                     <h3 className="mb-2 font-semibold text-gray-900">Email</h3>
                     <a
@@ -86,7 +85,6 @@ export default function Kontakt() {
                     </p>
                   </div>
                 </div>
-              </div>
             </div>
           </div>
 
@@ -111,7 +109,7 @@ export default function Kontakt() {
                       id="name"
                       name="name"
                       required
-                      className="w-full rounded-lg border border-gray-300 px-4 py-2 focus:border-blue-500 focus:outline-none focus:ring-2 focus:ring-blue-200"
+                      className="w-full rounded-lg border border-gray-300 px-4 py-2 text-gray-900 placeholder:text-gray-400 focus:border-blue-500 focus:outline-none focus:ring-2 focus:ring-blue-200"
                     />
                   </div>
 
@@ -127,7 +125,7 @@ export default function Kontakt() {
                       id="email"
                       name="email"
                       required
-                      className="w-full rounded-lg border border-gray-300 px-4 py-2 focus:border-blue-500 focus:outline-none focus:ring-2 focus:ring-blue-200"
+                      className="w-full rounded-lg border border-gray-300 px-4 py-2 text-gray-900 placeholder:text-gray-400 focus:border-blue-500 focus:outline-none focus:ring-2 focus:ring-blue-200"
                     />
                   </div>
                 </div>
@@ -143,7 +141,7 @@ export default function Kontakt() {
                     type="tel"
                     id="phone"
                     name="phone"
-                    className="w-full rounded-lg border border-gray-300 px-4 py-2 focus:border-blue-500 focus:outline-none focus:ring-2 focus:ring-blue-200"
+                    className="w-full rounded-lg border border-gray-300 px-4 py-2 text-gray-900 placeholder:text-gray-400 focus:border-blue-500 focus:outline-none focus:ring-2 focus:ring-blue-200"
                   />
                 </div>
 
@@ -159,7 +157,7 @@ export default function Kontakt() {
                     id="subject"
                     name="subject"
                     required
-                    className="w-full rounded-lg border border-gray-300 px-4 py-2 focus:border-blue-500 focus:outline-none focus:ring-2 focus:ring-blue-200"
+                    className="w-full rounded-lg border border-gray-300 px-4 py-2 text-gray-900 placeholder:text-gray-400 focus:border-blue-500 focus:outline-none focus:ring-2 focus:ring-blue-200"
                   />
                 </div>
 
@@ -175,7 +173,7 @@ export default function Kontakt() {
                     name="message"
                     rows={6}
                     required
-                    className="w-full rounded-lg border border-gray-300 px-4 py-2 focus:border-blue-500 focus:outline-none focus:ring-2 focus:ring-blue-200"
+                    className="w-full rounded-lg border border-gray-300 px-4 py-2 text-gray-900 placeholder:text-gray-400 focus:border-blue-500 focus:outline-none focus:ring-2 focus:ring-blue-200"
                   ></textarea>
                 </div>
 
