@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Slider from "./components/Slider";
 import References from "./components/References";
+import HashScrollHandler from "./components/HashScrollHandler";
 
 export const metadata: Metadata = {
   title: "Dobrodošli u STEP-SISTEM",
@@ -30,8 +31,9 @@ export const metadata: Metadata = {
 export default function Home() {
   return (
     <div className="min-h-screen bg-white">
+      <HashScrollHandler />
       <Slider />
-      <main className="container mx-auto px-4 py-12">
+      <main id="o-nama" className="container mx-auto px-4 py-12 scroll-mt-24">
         <div className="mx-auto max-w-4xl text-center">
           <h1 className="mb-6 text-5xl font-bold text-gray-900">
             Dobrodošli u STEP-SISTEM

@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import logo from "../assets/logo.png";
+import SmoothScrollLink from "./SmoothScrollLink";
 
 export default function Header() {
   return (
@@ -31,13 +32,14 @@ export default function Header() {
       {/* Navigacioni baner - sivi, visina 60px */}
       <nav className="flex h-[60px] w-full items-center justify-center bg-gray-700 px-8">
         <div className="flex w-full max-w-7xl items-center justify-center gap-12">
-          <Link
-            href="/"
+          <SmoothScrollLink
+            href="/#o-nama"
+            anchorId="o-nama"
             className="text-lg font-bold text-white transition-colors hover:text-gray-200"
             style={{ fontFamily: "var(--font-montserrat)" }}
           >
             O nama
-          </Link>
+          </SmoothScrollLink>
           <Link
             href="/proizvodi"
             className="text-lg font-bold text-white transition-colors hover:text-gray-200"

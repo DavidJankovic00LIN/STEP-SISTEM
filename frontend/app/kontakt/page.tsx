@@ -49,9 +49,9 @@ export default function Kontakt() {
         </h1>
 
         <div className="mx-auto grid max-w-7xl gap-12 lg:grid-cols-3">
-          {/* Leva kolona - 1/3 - Kontakt informacije */}
+          {/* Kontakt informacije */}
           <div className="lg:col-span-1">
-            <div className="rounded-lg bg-gray-50 p-8">
+            <div className="rounded-lg bg-gray-100 p-8">
               <h2 className="mb-6 text-2xl font-semibold text-gray-900">
                 Kontakt informacije
               </h2>
@@ -62,7 +62,7 @@ export default function Kontakt() {
                       href="mailto:info@step-sistem.rs"
                       className="text-blue-600 hover:text-blue-800 hover:underline"
                     >
-                      info@step-sistem.rs
+                     step.sistem.valjevo@gmail.com
                     </a>
                   </div>
 
@@ -72,7 +72,7 @@ export default function Kontakt() {
                       href="tel:+381123456789"
                       className="text-blue-600 hover:text-blue-800 hover:underline"
                     >
-                      +381 12 345 6789
+                      069 467 5677
                     </a>
                   </div>
 
@@ -80,17 +80,15 @@ export default function Kontakt() {
                     <h3 className="mb-2 font-semibold text-gray-900">Adresa</h3>
                     <p className="leading-relaxed">
                       Valjevo, Srbija
-                      <br />
-                      Industrijska zona
                     </p>
                   </div>
                 </div>
             </div>
           </div>
 
-          {/* Desna kolona - 2/3 - Kontakt forma */}
+          {/* Kontakt forma */}
           <div className="lg:col-span-2">
-            <div className="rounded-lg bg-gray-50 p-8">
+            <div className="rounded-lg bg-gray-100 p-8">
               <h2 className="mb-6 text-2xl font-semibold text-gray-900">
                 Pošaljite nam poruku
               </h2>
