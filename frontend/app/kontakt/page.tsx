@@ -130,21 +130,6 @@ export default function Kontakt() {
 
                 <div>
                   <label
-                    htmlFor="phone"
-                    className="mb-2 block text-sm font-medium text-gray-700"
-                  >
-                    Telefon
-                  </label>
-                  <input
-                    type="tel"
-                    id="phone"
-                    name="phone"
-                    className="w-full rounded-lg border border-gray-300 px-4 py-2 text-gray-900 placeholder:text-gray-400 focus:border-blue-500 focus:outline-none focus:ring-2 focus:ring-blue-200"
-                  />
-                </div>
-
-                <div>
-                  <label
                     htmlFor="subject"
                     className="mb-2 block text-sm font-medium text-gray-700"
                   >
