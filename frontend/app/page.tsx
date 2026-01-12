@@ -4,7 +4,7 @@ import References from "./components/References";
 import HashScrollHandler from "./components/HashScrollHandler";
 
 export const metadata: Metadata = {
-  title: "Dobrodošli u STEP-SISTEM",
+  title: "STEP SISTEM - Profesionalna rešenja za industrijsku automatizaciju i PLC sisteme",
   description:
     "STEP-SISTEM je firma iz Valjeva specijalizovana za industrijsku automatiku i PLC rešenja. Bavimo se projektovanjem, programiranjem i puštanjem u rad automatizovanih industrijskih sistema. PLC programiranje, HMI i SCADA sistemi, elektro ormari i servis industrijskih sistema.",
   keywords: [
