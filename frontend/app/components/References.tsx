@@ -1,5 +1,6 @@
 "use client";
 
+import { useEffect, useRef } from "react";
 import Image from "next/image";
 import elkoTimImg from "../assets/refer/elko tim.png";
 import enelImg from "../assets/refer/enel.png";
@@ -22,8 +23,37 @@ const logos = [
 ];
 
 export default function References() {
-  // Tri kopije logoa za seamless infinite scroll - kada se završi prva trećina, druga trećina je već na istom mestu
-  const duplicatedLogos = [...logos, ...logos, ...logos];
+  // Dve kopije logoa za seamless infinite scroll
+  const duplicatedLogos = [...logos, ...logos];
+  const sliderRef = useRef<HTMLDivElement>(null);
+  const autoScrollInterval = useRef<number | null>(null);
+
+  const autoScroll = () => {
+    if (sliderRef.current) {
+      sliderRef.current.scrollLeft += 1.2;
+      const { scrollLeft, scrollWidth } = sliderRef.current;
+      const halfScrollWidth = scrollWidth / 2;
+      if (scrollLeft >= halfScrollWidth) {
+        sliderRef.current.scrollLeft = scrollLeft - halfScrollWidth;
+      }
+    }
+    autoScrollInterval.current = requestAnimationFrame(autoScroll);
+  };
+
+  const startAutoScroll = () => {
+    autoScrollInterval.current = requestAnimationFrame(autoScroll);
+  };
+
+  const stopAutoScroll = () => {
+    if (autoScrollInterval.current) {
+      cancelAnimationFrame(autoScrollInterval.current);
+    }
+  };
+
+  useEffect(() => {
+    startAutoScroll();
+    return () => stopAutoScroll();
+  }, []);
 
   return (
     <section className="bg-white py-12">
@@ -33,11 +63,15 @@ export default function References() {
         </h2>
         <div className="relative overflow-hidden">
           {/* Infinite scroll container */}
-          <div className="flex animate-scroll-infinite hover:[animation-play-state:paused]">
+          <div
+            ref={sliderRef}
+            className="flex overflow-x-auto scrollbar-hide"
+            style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}
+          >
             {duplicatedLogos.map((logo, index) => (
               <div
                 key={index}
-                className="mx-8 flex min-w-[250px] items-center justify-center md:min-w-[300px]"
+                className="mx-8 flex min-w-[250px] items-center justify-center md:min-w-[300px] flex-shrink-0"
               >
                 <div className="relative h-24 w-full">
                   <Image

@@ -2,28 +2,37 @@
 
 import { useState, useEffect } from "react";
 import Image from "next/image";
-import elektroImg from "../assets/elektro.jpg";
-import plcImg from "../assets/plc_slika.jpg";
-import scadaImg from "../assets/scada.jpg";
+import slika1 from "../assets/18.png";
+import slika2 from "../assets/24.png";
+import slika3 from "../assets/31.png";
+import slika4 from "../assets/34.png";
+import slika5 from "../assets/36.png";
 
 const slides = [
   {
     id: 1,
-    title: "Elektro Instalacije",
-    subtitle: "Profesionalne Elektro Instalacije",
-    image: elektroImg,
+    image: slika1,
+    alt: "Elektro Instalacije",
   },
   {
     id: 2,
-    title: "PLC Sistemi",
-    subtitle: "Napredni PLC Sistemi",
-    image: plcImg,
+    image: slika2,
+    alt: "PLC Sistemi",
   },
   {
     id: 3,
-    title: "SCADA Rešenja",
-    subtitle: "Kompletna SCADA Rešenja",
-    image: scadaImg,
+    image: slika3,
+    alt: "SCADA Rešenja 1",
+  },
+  {
+    id: 4,
+    image: slika4,
+    alt: "SCADA Rešenja 2",
+  },
+  {
+    id: 5,
+    image: slika5,
+    alt: "SCADA Rešenja 3",
   },
 ];
 
@@ -43,10 +52,10 @@ export default function Slider() {
           img.src = slide.image;
         }
         img.onload = () => {
-          console.log(`Preloaded slide ${idx + 1}: ${slide.title}`);
+          console.log(`Preloaded slide ${idx + 1}`);
         };
         img.onerror = () => {
-          console.error(`Failed to preload slide ${idx + 1}: ${slide.title}`);
+          console.error(`Failed to preload slide ${idx + 1}`);
         };
       } catch (error) {
         console.error(`Error preloading slide ${idx + 1}:`, error);
@@ -96,15 +105,15 @@ export default function Slider() {
         >
           <Image
             src={slide.image}
-            alt={slide.title}
+            alt={slide.alt}
             fill
             className="object-cover"
-            priority={index <= 1}
+            priority={index <= 2}
             quality={90}
             sizes="100vw"
-            loading={index <= 1 ? "eager" : "lazy"}
+            loading="eager"
             onError={(e) => {
-              console.error(`Error loading image for slide ${index + 1}:`, slide.title);
+              console.error(`Error loading image for slide ${index + 1}:`, slide.alt);
             }}
           />
           <div className="absolute inset-0 bg-black/30"></div>

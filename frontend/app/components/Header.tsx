@@ -18,7 +18,7 @@ export default function Header() {
             className="object-contain"
           />
           <h4
-            className="mt-2 text-base"
+            className="mt-2 text-base font-bold"
             style={{ color: "#003866", fontFamily: "var(--font-montserrat)" }}
           >
             Industrial automation & PLC solutions

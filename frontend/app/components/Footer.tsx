@@ -1,4 +1,6 @@
 import Link from "next/link";
+import Image from "next/image";
+import logo from "../assets/Step-Sistem-Kolor-Bela-Slova.png";
 
 export default function Footer() {
   return (
@@ -7,6 +9,15 @@ export default function Footer() {
         <div className="grid gap-8 md:grid-cols-3">
           <div>
             <h3 className="mb-4 text-xl font-semibold">STEP-SISTEM</h3>
+            <div className="mb-4">
+              <Image
+                src={logo}
+                alt="STEP-SISTEM Logo"
+                width={120}
+                height={30}
+                className="object-contain"
+              />
+            </div>
             <p className="text-sm text-gray-300">
               Profesionalna rešenja za industrijsku automatizaciju i PLC sisteme.
             </p>
