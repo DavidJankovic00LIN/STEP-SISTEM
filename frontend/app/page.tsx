@@ -22,9 +22,27 @@ export const metadata: Metadata = {
     description:
       "Firma iz Valjeva specijalizovana za industrijsku automatiku i PLC rešenja. Projektovanje, programiranje i puštanje u rad automatizovanih industrijskih sistema.",
     type: "website",
+    url: "https://stepsistem.rs",
+    siteName: "STEP-SISTEM",
+    locale: "sr_RS",
+    images: [
+      {
+        url: "https://stepsistem.rs/logo.png",
+        width: 1200,
+        height: 630,
+        alt: "STEP-SISTEM Logo",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "STEP-SISTEM - Profesionalna rešenja za industrijsku automatizaciju",
+    description:
+      "STEP-SISTEM je firma iz Valjeva specijalizovana za industrijsku automatiku i PLC rešenja. Bavimo se projektovanjem, programiranjem i puštanjem u rad automatizovanih industrijskih sistema, sa fokusom na pouzdan rad, stabilnost procesa i dugoročnu održivost rešenja.",
+    images: ["https://stepsistem.rs/logo.png"],
   },
   alternates: {
-    canonical: "/",
+    canonical: "https://stepsistem.rs/",
   },
 };
 

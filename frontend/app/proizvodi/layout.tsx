@@ -21,9 +21,27 @@ export const metadata: Metadata = {
     description:
       "Prilagođena rešenja za industrijsku automatizaciju: PLC sistemi, HMI paneli, SCADA sistemi, elektro ormari i rešenja po meri.",
     type: "website",
+    url: "https://stepsistem.rs/proizvodi",
+    siteName: "STEP-SISTEM",
+    locale: "sr_RS",
+    images: [
+      {
+        url: "https://stepsistem.rs/logo.png",
+        width: 1200,
+        height: 630,
+        alt: "STEP-SISTEM Proizvodi",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Proizvodi - STEP-SISTEM",
+    description:
+      "Prilagođena rešenja za industrijsku automatizaciju: PLC sistemi, HMI paneli, SCADA sistemi, elektro ormari i rešenja po meri.",
+    images: ["https://stepsistem.rs/logo.png"],
   },
   alternates: {
-    canonical: "/proizvodi",
+    canonical: "https://stepsistem.rs/proizvodi",
   },
 };
 

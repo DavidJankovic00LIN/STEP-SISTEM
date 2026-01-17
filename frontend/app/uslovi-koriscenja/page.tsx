@@ -8,8 +8,32 @@ export const metadata: Metadata = {
     index: false,
     follow: true,
   },
+  openGraph: {
+    title: "Uslovi korišćenja - STEP-SISTEM",
+    description:
+      "Uslovi korišćenja sajta STEP-SISTEM. Pravila i odredbe koje regulišu korišćenje našeg sajta, prava intelektualne svojine i odgovornost korisnika.",
+    type: "website",
+    url: "https://stepsistem.rs/uslovi-koriscenja",
+    siteName: "STEP-SISTEM",
+    locale: "sr_RS",
+    images: [
+      {
+        url: "https://stepsistem.rs/logo.png",
+        width: 1200,
+        height: 630,
+        alt: "STEP-SISTEM Uslovi korišćenja",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Uslovi korišćenja - STEP-SISTEM",
+    description:
+      "Uslovi korišćenja sajta STEP-SISTEM. Pravila i odredbe koje regulišu korišćenje našeg sajta, prava intelektualne svojine i odgovornost korisnika.",
+    images: ["https://stepsistem.rs/logo.png"],
+  },
   alternates: {
-    canonical: "/uslovi-koriscenja",
+    canonical: "https://stepsistem.rs/uslovi-koriscenja",
   },
 };
 

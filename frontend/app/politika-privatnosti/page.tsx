@@ -8,8 +8,32 @@ export const metadata: Metadata = {
     index: false,
     follow: true,
   },
+  openGraph: {
+    title: "Politika privatnosti - STEP-SISTEM",
+    description:
+      "Politika privatnosti STEP-SISTEM-a. Informacije o načinu prikupljanja, korišćenja i zaštite ličnih podataka posetilaca i klijenata. Uvažavamo vašu privatnost i poštujemo zakonske odredbe o zaštiti podataka.",
+    type: "website",
+    url: "https://stepsistem.rs/politika-privatnosti",
+    siteName: "STEP-SISTEM",
+    locale: "sr_RS",
+    images: [
+      {
+        url: "https://stepsistem.rs/logo.png",
+        width: 1200,
+        height: 630,
+        alt: "STEP-SISTEM Politika privatnosti",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Politika privatnosti - STEP-SISTEM",
+    description:
+      "Politika privatnosti STEP-SISTEM-a. Informacije o načinu prikupljanja, korišćenja i zaštite ličnih podataka posetilaca i klijenata. Uvažavamo vašu privatnost i poštujemo zakonske odredbe o zaštiti podataka.",
+    images: ["https://stepsistem.rs/logo.png"],
+  },
   alternates: {
-    canonical: "/politika-privatnosti",
+    canonical: "https://stepsistem.rs/politika-privatnosti",
   },
 };
 

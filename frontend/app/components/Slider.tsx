@@ -2,11 +2,11 @@
 
 import { useState, useEffect } from "react";
 import Image from "next/image";
-import slika1 from "../assets/18.png";
-import slika2 from "../assets/24.png";
-import slika3 from "../assets/31.png";
-import slika4 from "../assets/34.png";
-import slika5 from "../assets/36.png";
+import slika1 from "../assets/1.jpg";
+import slika2 from "../assets/2.jpg";
+import slika3 from "../assets/3.jpg";
+import slika4 from "../assets/4.jpg";
+
 
 const slides = [
   {
@@ -29,11 +29,7 @@ const slides = [
     image: slika4,
     alt: "SCADA Rešenja 2",
   },
-  {
-    id: 5,
-    image: slika5,
-    alt: "SCADA Rešenja 3",
-  },
+ 
 ];
 
 export default function Slider() {

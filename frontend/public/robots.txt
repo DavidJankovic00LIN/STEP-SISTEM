@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+Disallow: /politika-privatnosti
+Disallow: /uslovi-koriscenja
+
+Sitemap: https://stepsistem.rs/sitemap.xml

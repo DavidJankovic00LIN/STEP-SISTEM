@@ -21,7 +21,7 @@ const montserrat = Montserrat({
 
 export const metadata: Metadata = {
   metadataBase: new URL(
-    process.env.NEXT_PUBLIC_SITE_URL || "https://step-sistem.rs"
+    process.env.NEXT_PUBLIC_SITE_URL || "https://stepsistem.rs"
   ),
   title: {
     default: "STEP-SISTEM - Industrial automation & PLC solutions",
