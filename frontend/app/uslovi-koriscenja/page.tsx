@@ -47,7 +47,7 @@ export default function UsloviKoriscenja() {
           </h1>
           <div className="prose max-w-none space-y-6 text-gray-700">
             <p className="text-sm text-gray-500">
-              Poslednji put ažurirano: [datum ažuriranja]
+              Poslednji put ažurirano: 25.01.2026.
             </p>
 
             <section>
@@ -55,12 +55,14 @@ export default function UsloviKoriscenja() {
                 1. OPŠTE ODREDBE
               </h2>
               <p>
-                Ovi Uslovi korišćenja regulišu korišćenje sajta [adresa sajta].
-                Vlasnik sajta je STEP-SISTEM, sa sedištem na adresi [adresa
-                sedišta], [poštanski broj], [grad], Srbija.
+                Ovi Uslovi korišćenja regulišu korišćenje sajta{" "}
+                <span className="font-medium">https://stepsistem.rs</span>.
+                Vlasnik sajta je STEP-SISTEM, sa sedištem u Valjevu, Srbija.
               </p>
               <p className="mt-2">
-                Kontakt: [email adresa], telefon: [broj telefona].
+                Kontakt:{" "}
+                <span className="font-medium">step.sistem.valjevo@gmail.com</span>
+                , telefon: <span className="font-medium">069 467 5677</span>.
               </p>
             </section>
 
@@ -148,7 +150,7 @@ export default function UsloviKoriscenja() {
               </h2>
               <p>
                 Ovi uslovi se tumače u skladu sa zakonima Republike Srbije. Za
-                sve sporove nadležan je sud u [grad nadležnog suda].
+                sve sporove nadležan je sud u Valjevu.
               </p>
             </section>
           </div>

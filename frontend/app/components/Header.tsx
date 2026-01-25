@@ -30,26 +30,26 @@ export default function Header() {
       <div className="h-5 bg-white"></div>
 
       {/* Navigacioni baner - sivi, visina 60px */}
-      <nav className="flex h-[60px] w-full items-center justify-center bg-gray-700 px-8">
-        <div className="flex w-full max-w-7xl items-center justify-center gap-12">
+      <nav className="flex w-full items-center justify-center bg-gray-700 px-4 py-2 sm:px-8">
+        <div className="flex w-full max-w-7xl flex-wrap items-center justify-center gap-x-4 gap-y-2 sm:gap-x-8 md:gap-x-12">
           <SmoothScrollLink
             href="/#o-nama"
             anchorId="o-nama"
-            className="text-lg font-bold text-white transition-colors hover:text-gray-200"
+            className="whitespace-nowrap text-sm font-bold text-white transition-colors hover:text-gray-200 sm:text-base md:text-lg"
             style={{ fontFamily: "var(--font-montserrat)" }}
           >
             O nama
           </SmoothScrollLink>
           <Link
             href="/proizvodi"
-            className="text-lg font-bold text-white transition-colors hover:text-gray-200"
+            className="whitespace-nowrap text-sm font-bold text-white transition-colors hover:text-gray-200 sm:text-base md:text-lg"
             style={{ fontFamily: "var(--font-montserrat)" }}
           >
             Proizvodi
           </Link>
           <Link
             href="/kontakt"
-            className="text-lg font-bold text-white transition-colors hover:text-gray-200"
+            className="whitespace-nowrap text-sm font-bold text-white transition-colors hover:text-gray-200 sm:text-base md:text-lg"
             style={{ fontFamily: "var(--font-montserrat)" }}
           >
             Kontakt

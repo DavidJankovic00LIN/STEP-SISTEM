@@ -47,7 +47,7 @@ export default function PolitikaPrivatnosti() {
           </h1>
           <div className="prose max-w-none space-y-6 text-gray-700">
             <p className="text-sm text-gray-500">
-              Poslednji put ažurirano: [datum ažuriranja]
+              Poslednji put ažurirano: 25.01.2026.
             </p>
 
             <section>
@@ -56,8 +56,9 @@ export default function PolitikaPrivatnosti() {
               </h2>
               <p>
                 Ova Politika privatnosti odnosi se na veb sajt STEP-SISTEM-a
-                (u daljem tekstu: "Društvo"), dostupan na adresi [adresa sajta],
-                i objašnjava način prikupljanja, korišćenja i zaštite ličnih
+                (u daljem tekstu: &quot;Firma&quot;), dostupan na adresi{" "}
+                <span className="font-medium">https://stepsistem.rs</span>, i
+                objašnjava način prikupljanja, korišćenja i zaštite ličnih
                 podataka posetilaca i klijenata.
               </p>
             </section>
@@ -74,12 +75,18 @@ export default function PolitikaPrivatnosti() {
                 <li>Ime i prezime (ukoliko se unosi pri kontaktu)</li>
                 <li>Adresa elektronske pošte</li>
                 <li>Broj telefona (ukoliko se dostavi)</li>
+                <li>Predmet i sadržaj poruke (kontakt forma)</li>
                 <li>IP adresa</li>
                 <li>
                   Informacije koje se automatski prikupljaju putem kolačića
                   (cookies)
                 </li>
               </ul>
+              <p className="mt-2">
+                Kada koristite kontakt formu, podaci koje unesete (npr. ime i
+                prezime, email, predmet i poruka) koriste se isključivo radi
+                odgovora na vaš upit.
+              </p>
             </section>
 
             <section>
@@ -117,7 +124,19 @@ export default function PolitikaPrivatnosti() {
 
             <section>
               <h2 className="mb-4 text-2xl font-semibold text-gray-900">
-                5. Bezbednost podataka
+                5. Obrada putem trećih strana (kontakt forma)
+              </h2>
+              <p>
+                Slanje poruka putem kontakt forme realizuje se korišćenjem
+                servisa treće strane (Web3Forms). U tom slučaju, podaci koje
+                unesete u formu prosleđuju se tom servisu isključivo radi
+                dostavljanja vaše poruke na našu email adresu.
+              </p>
+            </section>
+
+            <section>
+              <h2 className="mb-4 text-2xl font-semibold text-gray-900">
+                6. Bezbednost podataka
               </h2>
               <p>
                 Preduzimamo odgovarajuće tehničke i organizacione mere radi
@@ -129,7 +148,7 @@ export default function PolitikaPrivatnosti() {
 
             <section>
               <h2 className="mb-4 text-2xl font-semibold text-gray-900">
-                6. Prava korisnika
+                7. Prava korisnika
               </h2>
               <p>
                 Kao korisnik, imate sledeća prava u vezi sa vašim ličnim
@@ -145,13 +164,13 @@ export default function PolitikaPrivatnosti() {
               </ul>
               <p className="mt-2">
                 Zahtevi u vezi sa ostvarivanjem ovih prava možete poslati na:{" "}
-                [email adresa]
+                <span className="font-medium">step.sistem.valjevo@gmail.com</span>
               </p>
             </section>
 
             <section>
               <h2 className="mb-4 text-2xl font-semibold text-gray-900">
-                7. Zadržavanje podataka
+                8. Zadržavanje podataka
               </h2>
               <p>
                 Vaši podaci se čuvaju onoliko dugo koliko je potrebno radi
@@ -161,7 +180,7 @@ export default function PolitikaPrivatnosti() {
 
             <section>
               <h2 className="mb-4 text-2xl font-semibold text-gray-900">
-                8. Izmene Politike privatnosti
+                9. Izmene Politike privatnosti
               </h2>
               <p>
                 Zadržavamo pravo da u bilo kom trenutku izmenimo ovu Politiku
@@ -176,7 +195,7 @@ export default function PolitikaPrivatnosti() {
 
             <section>
               <h2 className="mb-4 text-2xl font-semibold text-gray-900">
-                9. Kontakt
+                10. Kontakt
               </h2>
               <p>
                 Za sva pitanja u vezi sa zaštitom privatnosti i ličnih podataka,
@@ -185,11 +204,11 @@ export default function PolitikaPrivatnosti() {
               <p className="mt-2">
                 STEP-SISTEM
                 <br />
-                [adresa sedišta], [poštanski broj] [grad], Srbija
+                Valjevo, Srbija
                 <br />
-                E-pošta: [email adresa]
+                E-pošta: step.sistem.valjevo@gmail.com
                 <br />
-                Telefon: [broj telefona]
+                Telefon: 069 467 5677
               </p>
             </section>
           </div>
