@@ -16,10 +16,45 @@ export default function Kontakt() {
     const form = e.currentTarget;
     const formData = new FormData(form);
 
+    // Čitanje environment varijabli
+    const accessKey = process.env.NEXT_PUBLIC_WEB3FORMS_ACCESS_KEY;
+    const contactEmail = process.env.NEXT_PUBLIC_CONTACT_EMAIL;
+
+    // Provera da li su environment varijable postavljene
+    if (!accessKey || !contactEmail) {
+      console.error(
+        "Environment varijable nisu postavljene. Proverite .env fajl."
+      );
+      setSubmitStatus("error");
+      setIsSubmitting(false);
+      return;
+    }
+
     try {
-      // Web3Forms Access Key - treba da se zameni sa stvarnim ključem
-      // Dobija se na https://web3forms.com
-      formData.append("access_key", "YOUR_WEB3FORMS_ACCESS_KEY");
+      // Web3Forms Access Key iz environment varijable
+      formData.append("access_key", accessKey);
+
+      // Email adresa primaoca iz environment varijable
+      formData.append("to", contactEmail);
+
+      // Dodatne opcije za poboljšanje email delivery-ja
+      formData.append("from_name", "STEP-SISTEM Kontakt Forma");
+      
+      // Subject template - koristi predmet iz forme
+      const subject = formData.get("subject") as string;
+      if (subject) {
+        formData.append("subject", `Kontakt forma: ${subject}`);
+      }
+
+      // Reply-to email adresa - koristi email adresu pošiljaoca
+      const senderEmail = formData.get("email") as string;
+      if (senderEmail) {
+        formData.append("replyto", senderEmail);
+      }
+
+      // Console logging za debugging (privremeno)
+      console.log("Šalje se poruka na:", contactEmail);
+      console.log("Pošiljalac:", senderEmail);
 
       const response = await fetch("https://api.web3forms.com/submit", {
         method: "POST",
@@ -28,13 +63,20 @@ export default function Kontakt() {
 
       const data = await response.json();
 
+      // Console logging odgovora (privremeno)
+      console.log("Web3Forms odgovor:", data);
+
       if (data.success) {
         setSubmitStatus("success");
         form.reset();
       } else {
+        // Poboljšan error handling - prikazuje detalje greške
+        console.error("Greška pri slanju:", data.message || data);
         setSubmitStatus("error");
       }
     } catch (error) {
+      // Poboljšan error handling
+      console.error("Došlo je do greške:", error);
       setSubmitStatus("error");
     } finally {
       setIsSubmitting(false);
